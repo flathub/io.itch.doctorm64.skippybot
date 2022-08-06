@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Categories=Game
-Encoding=UTF-8
-Name=Skippy The Bot
-Comment=Skippy is on an epic quest to unravel its true destiny.
-Exec=skippygame
-Icon=io.itch.doctorm64.skippybot
-Terminal=false
