@@ -31,7 +31,7 @@
     <launchable type="desktop-id">io.itch.doctorm64.skippybot.desktop</launchable>
     <url type="homepage">https://doctorm64.itch.io/skippybot</url>
     <releases>
-        <release version="1.15" date="2022-01-08"/>
+        <release version="1.15" date="2022-08-01"/>
     </releases>
     <content_rating type="oars-1.1">
         <content_attribute id="violence-cartoon">mild</content_attribute>
@@ -39,15 +39,15 @@
     <screenshots>
         <screenshot type="default">
             <caption>Unique physics based platforming</caption>
-            <image type="source" width="640" height="576">https://cdn.discordapp.com/attachments/509717926807601182/1004333527707422740/unknown.png</image>
+            <image type="source" width="640" height="576">https://cdn.discordapp.com/attachments/509717926807601182/1005378382680301669/01.png</image>
         </screenshot>
         <screenshot>
             <caption>Avoid dangerous machinery and escape the factory</caption>
-            <image type="source" width="640" height="576">https://cdn.discordapp.com/attachments/509717926807601182/1004333572775219210/unknown.png</image>
+            <image type="source" width="640" height="576">https://cdn.discordapp.com/attachments/509717926807601182/1005378410132021299/02.png</image>
         </screenshot>
         <screenshot>
             <caption>Conquer 10 hand crafted levels</caption>
-            <image type="source" width="640" height="576">https://cdn.discordapp.com/attachments/509717926807601182/1004333599719440465/unknown.png</image>
+            <image type="source" width="640" height="576">https://cdn.discordapp.com/attachments/509717926807601182/1005378690701607034/03.png</image>
         </screenshot>
     </screenshots>
 </component>
