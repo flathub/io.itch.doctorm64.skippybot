@@ -12,9 +12,9 @@ finish-args:
 - --socket=x11
 - --share=ipc
 
-# sound and graphics
+# sound, graphics and gamecontrollers
 - --socket=pulseaudio
-- --device=dri
+- --device=all
 
 command: skippygame
 modules:
