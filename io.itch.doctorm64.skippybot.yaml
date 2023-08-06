@@ -21,7 +21,7 @@ modules:
   - name: skippygame
     build-options:
       env:
-        SKIPPY_VERSION: "12"
+        SKIPPY_VERSION: "13"
     buildsystem: simple
     build-commands:
       # Game
@@ -37,9 +37,9 @@ modules:
       - type: archive
         # itch.io does not provide direct downloads of assets for unregistered users.
         # This is why we're using this URL which somehow circumvents itch's limitation and allows us to download the asset from itch directly.
-        url: https://cdn.matix-media.net/dd/c052f753
-        dest-filename: skippy_linux64_12.zip
+        url: https://cdn.matix-media.net/dd/a667ea96
+        dest-filename: skippy_linux64_13.zip
         strip-components: 0
-        sha512: 9c05efccf80385a8a57bf704ccc6e2e82ebf05e1fb30b34a0155c23fbfefd35589859177903b0115e1fcfbe443729fd9c1a4a0180e04b564e9d96cdd710e58fc
+        sha512: 818741ac7aec66d0ff27b91535a768bc7196c9d145193d1473d5dcecf08436685bdd2205b7d3796053a6761a6339440c7493bb5c352e5122d168902df4a522e5
       - type: file
         path: skippywrapper.sh
