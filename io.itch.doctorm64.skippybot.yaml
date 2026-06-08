@@ -1,6 +1,6 @@
 app-id: io.itch.doctorm64.skippybot
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 tags:
   - proprietary
@@ -29,17 +29,19 @@ modules:
       - install -Dm755 skippy_${SKIPPY_VERSION}.x86_64 /app/bin/skippybot
       - cp -r skippy_${SKIPPY_VERSION}_Data/ /app/bin/skippybot_Data
       # meta files
-      - install -Dm644 metadata/$FLATPAK_ID.appdata.xml /app/share/metainfo/$FLATPAK_ID.appdata.xml
-      - install -Dm644 metadata/$FLATPAK_ID.png /app/share/icons/hicolor/128x128/apps/$FLATPAK_ID.png
-      - install -Dm644 metadata/$FLATPAK_ID.desktop /app/share/applications/$FLATPAK_ID.desktop
+      - install -Dm644 metadata/${FLATPAK_ID}.appdata.xml -t /app/share/metainfo/
+      - install -Dm644 metadata/${FLATPAK_ID}.png -t /app/share/icons/hicolor/128x128/apps/
+      - install -Dm644 metadata/${FLATPAK_ID}.desktop -t /app/share/applications/
       - install -Dm755 skippywrapper.sh /app/bin/skippygame
     sources:
       - type: archive
         # itch.io does not provide direct downloads of assets for unregistered users.
         # This is why we're using this URL which somehow circumvents itch's limitation and allows us to download the asset from itch directly.
-        url: https://cdn.matix-media.net/dd/a667ea96
+        url: https://www.yakusha.net/wp-content/uploads/2026/06/Skippy_Linux13.zip
         dest-filename: skippy_linux64_13.zip
         strip-components: 0
-        sha512: 818741ac7aec66d0ff27b91535a768bc7196c9d145193d1473d5dcecf08436685bdd2205b7d3796053a6761a6339440c7493bb5c352e5122d168902df4a522e5
+        sha256: 246be19107663f7f3c5fd64e9bbb6f5d67dde5900a1393506a7d03fabf48adcd
+      - type: patch
+        path: fix-appdata.patch
       - type: file
         path: skippywrapper.sh

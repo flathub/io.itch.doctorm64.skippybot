@@ -1,0 +1,49 @@
+From 3d49e51ed10ebc1d038ff872e80cea92e18a0eed Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sun, 7 Jun 2026 19:28:33 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+Signed-off-by: Sabri Ünal <yakushabb@gmail.com>
+---
+ metadata/io.itch.doctorm64.skippybot.appdata.xml | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+
+diff --git a/metadata/io.itch.doctorm64.skippybot.appdata.xml b/metadata/io.itch.doctorm64.skippybot.appdata.xml
+index fb645b8..c2bb083 100644
+--- a/metadata/io.itch.doctorm64.skippybot.appdata.xml
++++ b/metadata/io.itch.doctorm64.skippybot.appdata.xml
+@@ -4,8 +4,10 @@
+     <metadata_license>CC0-1.0</metadata_license>
+     <project_license>LicenseRef-proprietary</project_license>
+     <name>Skippy The Bot</name>
+-    <developer_name>DoctorM64 and friends</developer_name>
+-    <summary>Skippy is on an epic quest to unravel its true destiny.</summary>
++    <developer id="io.itch.doctorm64">
++        <name>DoctorM64 and friends</name>
++    </developer>
++    <summary>Skippy is on an epic quest to unravel its true destiny</summary>
+     <categories>
+         <category>Game</category>
+     </categories>
+@@ -41,15 +43,15 @@
+     <screenshots>
+         <screenshot type="default">
+             <caption>Unique physics based platforming</caption>
+-            <image type="source" width="640" height="576">https://cdn.discordapp.com/attachments/509717926807601182/1005378382680301669/01.png</image>
++            <image type="source" width="640" height="576">https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9pby5pdGNoLmRvY3Rvcm02NC5za2lwcHlib3Qtc3RhYmxlLzc1Mng0MjMvaW8uaXRjaC5kb2N0b3JtNjQuc2tpcHB5Ym90LWQ2YmM0MjcwODlkNWFkN2I4ZjFlMDNlYmM0NThmNGQ3LnBuZw</image>
+         </screenshot>
+         <screenshot>
+             <caption>Avoid danger in diverse environments</caption>
+-            <image type="source" width="640" height="576">https://cdn.discordapp.com/attachments/509717926807601182/1005378410132021299/02.png</image>
++            <image type="source" width="640" height="576">https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9pby5pdGNoLmRvY3Rvcm02NC5za2lwcHlib3Qtc3RhYmxlLzc1Mng0MjMvaW8uaXRjaC5kb2N0b3JtNjQuc2tpcHB5Ym90LTVmM2ExODU0YzFhZDc5NmViM2M1ZDk4M2E5OWVjYTRiLnBuZw</image>
+         </screenshot>
+         <screenshot>
+             <caption>Conquer 30 hand crafted levels</caption>
+-            <image type="source" width="640" height="576">https://cdn.discordapp.com/attachments/509717926807601182/1005378690701607034/03.png</image>
++            <image type="source" width="640" height="576">https://imgproxy.flathub.org/insecure/dpr:2/f:avif/rs:fill-down/aHR0cHM6Ly9kbC5mbGF0aHViLm9yZy9tZWRpYS9pby5pdGNoLmRvY3Rvcm02NC5za2lwcHlib3Qtc3RhYmxlLzc1Mng0MjMvaW8uaXRjaC5kb2N0b3JtNjQuc2tpcHB5Ym90LTAzNGM4ZGU2ZGEwOGJlZTczNmEyMzYyZTE3M2IyZjQ5LnBuZw</image>
+         </screenshot>
+     </screenshots>
+ </component>
+--
+libgit2 1.7.2
+
